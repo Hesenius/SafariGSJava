@@ -1,12 +1,20 @@
 package manythings;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ArrayListExample {
+  public static void showAll(List<String> als) {
+    for (String s : als) {
+      System.out.println(">> " + s);
+    }
+  }
+
   public static void main(String[] args) {
     // <String> is COMPILE TIME ONLY...
     // provides consistency of use checking
-    ArrayList<String> stuff = new ArrayList();
+    List<String> stuff = new ArrayList<String>();
     // no subscript access
     stuff.add("Hello");
     stuff.add("Bonjour");
@@ -22,7 +30,13 @@ public class ArrayListExample {
 //    String s = (String)stuff.get(2);// not safe if this is int...
 //    System.out.println(s);
 
-    // List interface
+    showAll(stuff);
+
+    List<String> lls = new LinkedList<>(stuff);
+    System.out.println(lls);
+    showAll(lls);
+
+    // List interface--check
     // exceptions
     // methods more generally
     // classes/objects
