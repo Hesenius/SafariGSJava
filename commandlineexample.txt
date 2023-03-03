@@ -1,0 +1,42 @@
+simon@Ryzen:~/IdeaProjects/SafariGSJava$ tree src
+src
+├── main
+│   ├── java
+│   │   └── example
+│   │       └── hello
+│   │           └── Hello.java
+│   └── resources
+└── test
+    └── java
+
+7 directories, 1 file
+simon@Ryzen:~/IdeaProjects/SafariGSJava$ tree src
+src
+├── main
+│   ├── java
+│   │   └── example
+│   │       └── hello
+│   │           └── Hello.java
+│   └── resources
+└── test
+    └── java
+
+7 directories, 1 file
+simon@Ryzen:~/IdeaProjects/SafariGSJava$ cd src/main/java/
+simon@Ryzen:~/IdeaProjects/SafariGSJava/src/main/java$ javac -d classes example/hello/Hello.java
+simon@Ryzen:~/IdeaProjects/SafariGSJava/src/main/java$ tree
+.
+├── classes
+│   └── example
+│       └── hello
+│           └── Hello.class
+└── example
+    └── hello
+        └── Hello.java
+
+5 directories, 2 files
+simon@Ryzen:~/IdeaProjects/SafariGSJava/src/main/java$ java -cp classes example.hello.Hello
+Hello Java World!
+simon@Ryzen:~/IdeaProjects/SafariGSJava/src/main/java$ java -cp classes example.hello.Hello one two, these are arguments
+Hello Java World!
+simon@Ryzen:~/IdeaProjects/SafariGSJava/src/main/java$
